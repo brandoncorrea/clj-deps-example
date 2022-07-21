@@ -19,8 +19,8 @@ having a `project.clj` file, but you would need all your clj, cljc, and cljs cod
 
 ### `deps.edn`
 
-`:git/url`: The URL of the Git repo
-`:sha`: The full SHA of the specific commit/checkpoint you want to pull from
+- `:git/url`: The URL of the Git repo
+- `:sha`: The full SHA of the specific commit/checkpoint you want to pull from
 
 ````clj
 {:deps {brandoncorrea/clj-deps-example {:sha     "4d72c44073015b66924a560158bd4babbc0489f2"
