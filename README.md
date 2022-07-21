@@ -22,7 +22,7 @@ having a `project.clj` file, but you would need all your clj, cljc, and cljs cod
 `:git/url`: The URL of the Git repo
 `:sha`: The full SHA of the specific commit/checkpoint you want to pull from
 
-````
+````clj
 {:deps {brandoncorrea/clj-deps-example {:sha     "4d72c44073015b66924a560158bd4babbc0489f2"
                                         :git/url "https://github.com/brandoncorrea/clj-deps-example.git"}}
 ````
@@ -36,7 +36,7 @@ remote Git `:coordinates`.
 > however, this often does not match the "owner" and "project" coordinates of a Git
 > repository. This property provides the mapping.
 
-````
+````clj
 (defproject my/app "0.1.0"
   :repositories {"public-github" {:url "git://github.com"}}
   :dependencies [[brandoncorrea/clj-deps-example "4d72c44073015b66924a560158bd4babbc0489f2"]])
